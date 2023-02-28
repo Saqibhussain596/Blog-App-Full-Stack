@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan"); // morgan is a third party middleware to log the details of request
 const mongoose = require("mongoose");
@@ -6,10 +7,9 @@ const blogRoutes = require("./routes/blogRoutes");
 // express app
 const app = express();
 // connect to Mongo DB
-const dbURI =
-  "mongodb+srv://saqib:saqib596@cluster0.wjpdzbk.mongodb.net/Blog-project-DB?retryWrites=true&w=majority";
+mongoose.set("strictQuery", true);
 mongoose
-  .connect(dbURI, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
