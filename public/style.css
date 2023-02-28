@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: "Noto Serif", serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+}
+
+/* nav & footer styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav h1 a {
+    color: black;
+    font-size: 3em;
+}
+
+nav p,
+nav ul li a,
+.blogs p {
+    color: #777;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    transition: 0.5s;
+    color: black;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.blogs h2 {
+    font-size: 2em;
+    color: crimson;
+}
+
+.blogs h3 {
+    font-size: 1.3em;
+}
+
+.blogs a {
+    display: block;
+    margin: 40px 0;
+    padding-left: 30px;
+    border-left: 6px solid crimson;
+}
+
+.blogs a:hover h3 {
+    transition: 0.3s;
+    color: crimson;
+}
+
+.blogs .blog {
+    margin-block: 25px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+}
+
+.details {
+    position: relative;
+}
+
+.details .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border-radius: 50%; */
+    padding: 8px;
+    cursor: pointer;
+}
+
+.delete img {
+    width: 40px;
+}
+
+.delete:hover img {
+    transform: scale(1.1);
+}
+
+/* index styles */
+/* details styles */
+/* create styles */
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.create-blog label {
+    display: block;
+    margin-top: 24px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
